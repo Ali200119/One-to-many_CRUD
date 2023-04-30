@@ -1,0 +1,28 @@
+﻿@model BlogPost
+
+@{
+    ViewBag.Title = "Blog Post Details";
+}
+
+<div style="width: 70%; margin-left: 40px">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Title</th>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img style="width: 300px; height: 150px; border-radius: unset" src="~/img/@Model.Image" /></td>
+                <td>@Model.Title</td>
+                <td>@Model.Date.ToString("yyyy.MM.dd")</td>
+                <td>@Model.Description</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn mt-5" style="color: white;background-color: gray" asp-area="Admin" asp-controller="BlogPost" asp-action="Index">Back</a>
+</div>

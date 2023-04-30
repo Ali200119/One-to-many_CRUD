@@ -1,0 +1,19 @@
+﻿@model Category
+
+@{
+    ViewBag.Title = "Create Category";
+}
+
+<form style="margin: 40px 40px" method="post" asp-area="Admin" asp-controller="Category" asp-action="Create">
+    <div class="form-group">
+        <span class="text-danger">@ViewBag.Error</span>
+        <label asp-for="Name">Name</label>
+        <input type="text" class="form-control" id="Name" asp-for="Name" placeholder="Name">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+
+    <div style="display: flex;" class="mt-5">
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a class="btn" style="color: white;background-color: gray; margin-left: 10px" asp-area="Admin" asp-controller="Category" asp-action="Index">Cancel</a>
+    </div>
+</form>

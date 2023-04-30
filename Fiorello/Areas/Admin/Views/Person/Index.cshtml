@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Person>
+
+@{
+    ViewBag.Title = "Person";
+}
+
+<div style="width: 70%; margin-left: 40px">
+    <div style="display: flex; justify-content:right">
+        <a asp-area="Admin" asp-controller="Person" asp-action="Create" style="color: white;background-color: green; border: none" class="btn my-5">Create</a>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in Model)
+            {
+                <tr>
+                    <td><img src="~/img/@person.Image" /></td>
+                    <td>@person.Name</td>
+                    <td>@person.Position</td>
+                    <td>
+                        <div style="display: flex">
+                            <a asp-area="Admin" asp-controller="Person" asp-action="Details" asp-route-id="@person.Id" style="color: white;background-color: purple" class="btn">Details</a>
+                            <a asp-area="Admin" asp-controller="Person" asp-action="Edit" asp-route-id="@person.Id" style="color: black; margin-left: 10px; background-color: yellow" class="btn">Edit</a>
+                            <form method="post" asp-area="Admin" asp-controller="Person" asp-action="Delete" asp-route-id="@person.Id">
+                                <button type="submit" style="background-color: red; color: white; margin-left: 10px" class="btn">Delete</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

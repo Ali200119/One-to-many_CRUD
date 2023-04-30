@@ -1,0 +1,39 @@
+﻿@model PersonEditVM
+
+@{
+    ViewBag.Title = "Edit Person";
+}
+
+<div style="margin-left: 40px; margin-top: 40px">
+    <form method="post" asp-area="Admin" asp-controller="Person" asp-action="Edit" enctype="multipart/form-data">
+
+        <img style="width: 300px; height: 300px; border-radius: unset; object-fit: cover" src="~/img/@Model.Image" />
+
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Upload your profile image here</label>
+            <input class="form-control" id="formFile" asp-for="Photo">
+            <span class="text-danger" asp-validation-for="Photo"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Title">Name</label>
+            <input type="text" class="form-control" id="Name" asp-for="Name" placeholder="Name">
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Position">Position</label>
+            <input type="text" class="form-control" id="Position" asp-for="Position" placeholder="Position">
+            <span class="text-danger" asp-validation-for="Position"></span>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary mt-3">Update</button>
+    </form>
+
+    <a class="btn mt-5" style="color: white;background-color: gray" asp-area="Admin" asp-controller="Person" asp-action="Index">Back</a>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

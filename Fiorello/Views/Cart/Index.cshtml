@@ -1,0 +1,58 @@
+﻿@model List<CartDetailVM>
+
+@{
+    ViewBag.Title = "Cart";
+
+    decimal grandTotal = 0;
+}
+
+<div class="container">
+    <table class="table my-5">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Count</th>
+                <th scope="col">Total Price</th>
+                <th scope="col">Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr data-id="@product.Id">
+                    <td><img style="border-radius: 50%" src="~/img/@product.Image" width="60px" height="60px" /></td>
+                    <td>@product.Name</td>
+                    <td>
+                        <span>$</span>
+                        <span>@product.Price</span>
+                    </td>
+                    <td>
+                        <i style="font-size: 20px; cursor: pointer" class="fa-solid fa-minus minus"></i>
+                        <span style="margin-right: 17px; margin-left: 17px;">@product.Count</span>
+                        <i style="font-size: 20px; cursor: pointer" class="fa-solid fa-plus plus"></i>
+                    </td>
+
+                    @{
+                        decimal totalPrice = product.Price * product.Count;
+
+                        grandTotal += totalPrice;
+                    }
+
+                    <td>
+                        <span>$</span>
+                        <span>@totalPrice</span>
+                    </td>
+                    <td><i class="fa-solid fa-trash delete" style="color: #ff2600; cursor: pointer; font-size: 24px"></i></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h3 class="mb-5 grand-total">Grand Total: $ @grandTotal</h3>
+
+    <div class="alert alert-warning d-none" role="alert">
+        Cart is empty
+    </div>
+</div>

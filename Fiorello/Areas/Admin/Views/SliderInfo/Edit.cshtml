@@ -1,0 +1,42 @@
+﻿@model SliderInfoEditVM
+
+@{
+    ViewBag.Title = "Edit Slider Info";
+}
+
+<div style="margin-left: 40px; margin-top: 40px">
+    <form method="post" asp-area="Admin" asp-controller="SliderInfo" asp-action="Edit" enctype="multipart/form-data">
+
+        <img style="width: 300px; height: 150px; border-radius: unset" src="~/img/@Model.SignatureImage" />
+
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Upload your slider image here</label>
+            <input class="form-control" id="formFile" asp-for="SignaturePhoto">
+            <span class="text-danger" asp-validation-for="SignaturePhoto"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Title">Title</label>
+            <textarea type="text" class="form-control" id="Title" asp-for="Title" placeholder="Title"></textarea>
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Description">Description</label>
+            <textarea type="text" class="form-control" id="Description" asp-for="Description"></textarea>
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Update</button>
+    </form>
+
+    <a class="btn mt-5" style="color: white;background-color: gray" asp-area="Admin" asp-controller="SliderInfo" asp-action="Index">Back</a>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/ckeditor/ckeditor.js"></script>
+
+    <script>CKEDITOR.replace("Title");
+        CKEDITOR.replace("Description");</script>
+}

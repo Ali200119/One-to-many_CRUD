@@ -1,0 +1,22 @@
+﻿@model Slider
+
+@{
+    ViewBag.Title = "Slider Details";
+}
+
+<div style="width: 70%; margin-left: 40px">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img style="width: 300px; height: 150px; border-radius: unset" src="~/img/@Model.Image"/></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn mt-5" style="color: white;background-color: gray" asp-area="Admin" asp-controller="Slider" asp-action="Index">Back</a>
+</div>

@@ -1,0 +1,37 @@
+@model IEnumerable<Slider>
+
+@{
+    ViewBag.Title = "Slider";
+}
+
+<div style="width: 70%; margin-left: 40px">
+    <div style="display: flex; justify-content:right">
+        <a asp-area="Admin" asp-controller="Slider" asp-action="Create" style="color: white;background-color: green; border: none" class="btn my-5">Create</a>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var slider in Model)
+            {
+                <tr>
+                    <td><img src="~/img/@slider.Image" /></td>
+                    <td>
+                        <div style="display: flex">
+                            <a asp-area="Admin" asp-controller="Slider" asp-action="Details" asp-route-id="@slider.Id" style="color: white;background-color: purple" class="btn">Details</a>
+                            <a asp-area="Admin" asp-controller="Slider" asp-action="Edit" asp-route-id="@slider.Id" style="color: black; margin-left: 10px; background-color: yellow" class="btn">Edit</a>
+                            <form method="post" asp-area="Admin" asp-controller="Slider" asp-action="Delete" asp-route-id="@slider.Id">
+                                <button type="submit" style="background-color: red; color: white; margin-left: 10px" class="btn">Delete</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

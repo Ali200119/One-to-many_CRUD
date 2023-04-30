@@ -1,0 +1,26 @@
+﻿@model SliderInfo
+
+@{
+    ViewBag.Title = "Slider Info Details";
+}
+
+<div style="width: 70%; margin-left: 40px">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img style="width: 250px; height: 100px; border-radius: unset" src="~/img/@Model.SignatureImage" /></td>
+                <td>@Html.Raw(Model.Title)</td>
+                <td>@Html.Raw(Model.Description)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn mt-5" style="color: white;background-color: gray" asp-area="Admin" asp-controller="SliderInfo" asp-action="Index">Back</a>
+</div>

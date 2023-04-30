@@ -1,0 +1,42 @@
+﻿@model BlogPost
+
+@{
+    ViewBag.Title = "Edit Blog Post";
+}
+
+<div style="margin-left: 40px; margin-top: 40px">
+    <form method="post" asp-area="Admin" asp-controller="BlogPost" asp-action="Edit" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Upload your slider image here</label>
+            <input class="form-control" id="formFile" asp-for="Photo">
+            <span class="text-danger" asp-validation-for="Photo"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Title">Title</label>
+            <input type="text" class="form-control" id="Title" asp-for="Title" placeholder="Title">
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Description">Description</label>
+            <input type="text" class="form-control" id="Description" asp-for="Description" placeholder="Description">
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Date">Date</label>
+            <input type="datetime-local" class="form-control" id="Date" asp-for="Date">
+            <span class="text-danger" asp-validation-for="Date"></span>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary mt-3">Update</button>
+    </form>
+
+    <a class="btn mt-5" style="color: white;background-color: gray" asp-area="Admin" asp-controller="BlogPost" asp-action="Index">Back</a>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

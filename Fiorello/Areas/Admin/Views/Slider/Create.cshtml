@@ -1,0 +1,16 @@
+﻿@model Slider
+
+@{
+    ViewBag.Title = "Create Slider";
+}
+
+<div style="margin-left: 40px; margin-top: 40px">
+    <form method="post" asp-area="Admin" asp-controller="Slider" asp-action="Create" enctype="multipart/form-data">
+        <label for="formFile" class="form-label">Upload your slider image here</label>
+        <input class="form-control" id="formFile" asp-for="Photo">
+        <button type="submit" class="btn btn-primary mt-3">Create</button>
+        <span class="text-danger" asp-validation-for="Photo"></span>
+    </form>
+
+    <a class="btn mt-5" style="color: white;background-color: gray" asp-area="Admin" asp-controller="Slider" asp-action="Index">Back</a>
+</div>
