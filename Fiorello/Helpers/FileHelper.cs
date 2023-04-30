@@ -1,4 +1,7 @@
 ﻿using System;
+using Fiorello.Models;
+using System.IO;
+
 namespace Fiorello.Helpers
 {
 	public static class FileHelper
@@ -17,5 +20,13 @@ namespace Fiorello.Helpers
 		{
 			return Path.Combine(env, folder, fileName);
 		}
+
+		public static async Task CreateLocalFileAsync(this IFormFile file, string path)
+		{
+            using (FileStream stream = new FileStream(path, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+        }
 	}
 }

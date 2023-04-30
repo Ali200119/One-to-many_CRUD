@@ -66,10 +66,7 @@ namespace Fiorello.Areas.Admin.Controllers
             string fileName = Guid.NewGuid().ToString() + "_" + sliderInfo.SignaturePhoto.FileName;
             string path = FileHelper.GetFilePath(_env.WebRootPath, "img", fileName);
 
-            using (FileStream stream = new FileStream(path, FileMode.Create))
-            {
-                await sliderInfo.SignaturePhoto.CopyToAsync(stream);
-            }
+            await sliderInfo.SignaturePhoto.CreateLocalFileAsync(path);
 
             sliderInfo.SignatureImage = fileName;
 

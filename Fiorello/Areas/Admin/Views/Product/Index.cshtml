@@ -30,7 +30,7 @@
                     <td>@order</td>
                     <td><img src="~/img/@product.MainImage" /></td>
                     <td>@product.Name</td>
-                    <td>@product.Description</td>
+                    <td>@Html.Raw(product.Description)</td>
                     <td>@product.CategoryName</td>
                     <td>$ @product.Price</td>
                     <td>@product.Count</td>

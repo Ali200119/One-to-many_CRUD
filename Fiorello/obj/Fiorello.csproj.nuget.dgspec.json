@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Fiorello.csproj": {}
+    "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Fiorello.csproj": {}
   },
   "projects": {
-    "/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Fiorello.csproj": {
+    "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Fiorello.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Fiorello.csproj",
+        "projectUniqueName": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Fiorello.csproj",
         "projectName": "Fiorello",
-        "projectPath": "/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Fiorello.csproj",
+        "projectPath": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Fiorello.csproj",
         "packagesPath": "/Users/ali200119/.nuget/packages/",
-        "outputPath": "/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/obj/",
+        "outputPath": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ali200119/.nuget/NuGet/NuGet.Config"

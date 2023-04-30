@@ -1,0 +1,37 @@
+﻿@model ProductDetailsVM
+
+@{
+    ViewBag.Title = "Product Details";
+}
+
+<div style="width: 70%; margin-left: 40px">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image(s)</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+                <th scope="col">Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @foreach (var item in Model.Images)
+                    {
+                        <img style="width: 300px; height: 150px; border-radius: unset; display: block" src="~/img/@item" />
+                    }
+                </td>
+                <td>@Model.Name</td>
+                <td>@Html.Raw(Model.Description)</td>
+                <td>@Model.CategoryName</td>
+                <td>$ @Model.Price</td>
+                <td>@Model.Count</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn mt-5" style="color: white;background-color: gray" asp-area="Admin" asp-controller="Product" asp-action="Index">Back</a>
+</div>

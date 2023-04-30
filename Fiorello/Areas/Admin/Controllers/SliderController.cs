@@ -63,10 +63,7 @@ namespace Fiorello.Areas.Admin.Controllers
             string fileName = Guid.NewGuid().ToString() + "_" + slider.Photo.FileName;
             string path = FileHelper.GetFilePath(_env.WebRootPath, "img", fileName);
 
-            using(FileStream stream = new FileStream(path, FileMode.Create))
-            {
-                await slider.Photo.CopyToAsync(stream);
-            }
+            await slider.Photo.CreateLocalFileAsync(path);
 
             slider.Image = fileName;
 

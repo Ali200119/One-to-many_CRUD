@@ -9,173 +9,181 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Fiorello
 build_property.RootNamespace = Fiorello
-build_property.ProjectDir = /Users/ali200119/Desktop/Products-index_Pagination/Fiorello/
+build_property.ProjectDir = /Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/ali200119/Desktop/Products-index_Pagination/Fiorello
+build_property.MSBuildProjectDirectory = /Users/ali200119/Desktop/One-to-many_CRUD/Fiorello
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/BlogPost/Create.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/BlogPost/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQmxvZ1Bvc3QvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/BlogPost/Details.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/BlogPost/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQmxvZ1Bvc3QvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/BlogPost/Edit.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/BlogPost/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQmxvZ1Bvc3QvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/BlogPost/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/BlogPost/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQmxvZ1Bvc3QvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Category/Create.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Category/Details.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Category/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Category/Edit.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Category/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Dashboard/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Expert/Create.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Expert/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRXhwZXJ0L0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Expert/Details.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Expert/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRXhwZXJ0L0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Expert/Edit.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Expert/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRXhwZXJ0L0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Expert/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Expert/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRXhwZXJ0L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Person/Create.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Person/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGVyc29uL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Person/Details.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Person/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGVyc29uL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Person/Edit.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Person/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGVyc29uL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Person/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Person/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGVyc29uL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Product/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Product/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Shared/_Layout.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Slider/Create.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Slider/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVyL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Slider/Details.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Slider/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVyL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Slider/Edit.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Slider/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVyL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/Slider/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/Slider/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVyL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/SliderInfo/Create.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/SliderInfo/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVySW5mby9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/SliderInfo/Details.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/SliderInfo/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVySW5mby9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/SliderInfo/Edit.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/SliderInfo/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVySW5mby9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/SliderInfo/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/SliderInfo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVySW5mby9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/_ViewImports.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Areas/Admin/Views/_ViewStart.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/About/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/Cart/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/Home/Index.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/Shared/Components/Blog/Default.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/Shared/Components/Blog/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvQmxvZy9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/Shared/Components/Expert/Default.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/Shared/Components/Expert/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvRXhwZXJ0L0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/Shared/Components/Footer/Default.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/Shared/Components/Footer/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvRm9vdGVyL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/Shared/Components/Header/Default.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/Shared/Components/Header/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvSGVhZGVyL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/Shared/Components/Slider/Default.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/Shared/Components/Slider/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvU2xpZGVyL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/_ViewImports.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/_ViewStart.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali200119/Desktop/Products-index_Pagination/Fiorello/Views/Shared/_Layout.cshtml]
+[/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6x8vnqb9fw
