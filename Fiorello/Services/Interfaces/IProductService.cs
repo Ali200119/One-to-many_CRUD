@@ -6,7 +6,6 @@ namespace Fiorello.Services.Interfaces
 	public interface IProductService
 	{
 		Task<Product> GetById(int? id);
-        Task<Product> GetByIdWithIncludes(int? id);
         Task<IEnumerable<Product>> GetAll();
         Task<Product> GetFullDataById(int? id);
 		Task<List<Product>> GetPaginatedDatasAsync(int page, int take);

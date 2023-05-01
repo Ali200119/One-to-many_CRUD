@@ -1,0 +1,62 @@
+﻿@model ProductEditVM
+
+@{
+    ViewBag.Title = "Edit Product";
+}
+
+<div style="margin-left: 40px; margin-top: 40px">
+    <form method="post" asp-area="Admin" asp-controller="Product" asp-action="Edit" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label class="mb-2" style="display: block">Product Image(s)</label>
+
+            @foreach (var item in Model.ProductImages)
+             {
+                    <img style="width: 300px; height: 150px; border-radius: unset; margin-right: 15px" src="~/img/@item"/>
+             }
+        </div>
+
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Upload your product images here</label>
+            <input class="form-control" id="formFile" asp-for="Photos">
+            <span class="text-danger" asp-validation-for="Photos"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input type="text" class="form-control" id="Name" asp-for="Name" placeholder="Name">
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description"></label>
+            <textarea type="text" class="form-control" id="Description" asp-for="Description" placeholder="Description"></textarea>
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Price"></label>
+            <input type="number" class="form-control" id="Price" asp-for="Price" placeholder="Price">
+            <span class="text-danger" asp-validation-for="Price"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Count"></label>
+            <input class="form-control" id="Count" asp-for="Count" placeholder="Count">
+            <span class="text-danger" asp-validation-for="Count"></span>
+        </div>
+
+        <select class="form-control" id="customFile" asp-for="CategoryId" asp-items="@ViewBag.Categories">
+        </select>
+
+        <button type="submit" class="btn btn-primary mt-3">Create</button>
+    </form>
+
+    <a class="btn mt-5" style="color: white;background-color: gray" asp-area="Admin" asp-controller="Product" asp-action="Index">Back</a>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/ckeditor/ckeditor.js"></script>
+
+    <script>CKEDITOR.replace("Description");</script>
+}

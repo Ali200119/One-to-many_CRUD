@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X8dORj36oHaR0x7hON1MEuvvT84toywe2vOtkXHwSNc=",
+  "Hash": "ypgvmH2DsVl0SZE1zoDelKxhzCRy4mABlWPLJD4gYzA=",
   "Source": "Fiorello",
   "BasePath": "_content/Fiorello",
   "Mode": "Default",
@@ -22814,12 +22814,12 @@
       "OriginalItemSpec": "wwwroot/css/style.css.map"
     },
     {
-      "Identity": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/3b0f864a-2924-4127-981d-0971f855d1aa_Hacker.jpeg",
+      "Identity": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/9425a0db-9be5-4424-b5e9-287c3f269b4d_Rainbow Six Siege.jpeg",
       "SourceId": "Fiorello",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/",
       "BasePath": "_content/Fiorello",
-      "RelativePath": "img/3b0f864a-2924-4127-981d-0971f855d1aa_Hacker.jpeg",
+      "RelativePath": "img/9425a0db-9be5-4424-b5e9-287c3f269b4d_Rainbow Six Siege.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -22828,24 +22828,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/3b0f864a-2924-4127-981d-0971f855d1aa_Hacker.jpeg"
-    },
-    {
-      "Identity": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/3b145a16-ed2f-4823-a6d5-a20baec6c33c_Rainbow Six Siege.jpeg",
-      "SourceId": "Fiorello",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/",
-      "BasePath": "_content/Fiorello",
-      "RelativePath": "img/3b145a16-ed2f-4823-a6d5-a20baec6c33c_Rainbow Six Siege.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/3b145a16-ed2f-4823-a6d5-a20baec6c33c_Rainbow Six Siege.jpeg"
+      "OriginalItemSpec": "wwwroot/img/9425a0db-9be5-4424-b5e9-287c3f269b4d_Rainbow Six Siege.jpeg"
     },
     {
       "Identity": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/blog-feature-img-1.jpg",
@@ -22897,6 +22880,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/blog-feature-img-4.jpg"
+    },
+    {
+      "Identity": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/d7ec5546-907a-496e-bd94-38242c8fe724_Hacker.jpeg",
+      "SourceId": "Fiorello",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/",
+      "BasePath": "_content/Fiorello",
+      "RelativePath": "img/d7ec5546-907a-496e-bd94-38242c8fe724_Hacker.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/d7ec5546-907a-496e-bd94-38242c8fe724_Hacker.jpeg"
     },
     {
       "Identity": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/favicon.png",
@@ -23288,23 +23288,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/shop-10-img.jpg"
-    },
-    {
-      "Identity": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/shop-11-img.jpg",
-      "SourceId": "Fiorello",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/",
-      "BasePath": "_content/Fiorello",
-      "RelativePath": "img/shop-11-img.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/img/shop-11-img.jpg"
     },
     {
       "Identity": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/shop-12-img.jpg",

@@ -38,9 +38,7 @@
                         <div style="display: flex">
                             <a asp-area="Admin" asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" style="color: white;background-color: purple" class="btn">Details</a>
                             <a asp-area="Admin" asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id" style="color: black; margin-left: 10px; background-color: yellow" class="btn">Edit</a>
-                            <form method="post" asp-area="Admin" asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id">
-                                <button type="submit" style="background-color: red; color: white; margin-left: 10px" class="btn">Delete</button>
-                            </form>
+                            <a asp-area="Admin" asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" style="color: black; margin-left: 10px; background-color: red" class="btn">Delete</a>
                         </div>
                     </td>
                 </tr>

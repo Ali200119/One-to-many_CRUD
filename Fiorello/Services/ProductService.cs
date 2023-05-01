@@ -21,9 +21,7 @@ namespace Fiorello.Services
 
         public async Task<Product> GetById(int? id) => await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
 
-        public async Task<Product> GetByIdWithIncludes(int? id) => await _context.Products.Include(p => p.Category).Include(p => p.ProductImages).FirstOrDefaultAsync(p => p.Id == id);
-
-        public async Task<Product> GetFullDataById(int? id) => await _context.Products.Include(p => p.ProductImages).FirstOrDefaultAsync(p => p.Id == id);
+        public async Task<Product> GetFullDataById(int? id) => await _context.Products.Include(p => p.Category).Include(p => p.ProductImages).FirstOrDefaultAsync(p => p.Id == id);
 
         public async Task<List<Product>> GetPaginatedDatasAsync(int page, int take) => await _context.Products.Include(p => p.Category).Include(p => p.ProductImages).Skip(page * take - take).Take(take).ToListAsync();
 

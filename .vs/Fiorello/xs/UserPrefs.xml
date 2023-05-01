@@ -1,7 +1,4 @@
-﻿<Properties StartupConfiguration="{CC869C16-59DA-4429-93BA-19B94EDD971C}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Fiorello PreferredExecutionTarget="/Applications/Google Chrome.app" />
+﻿<Properties StartupConfiguration="{CC869C16-59DA-4429-93BA-19B94EDD971C}|Default" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workbench ActiveDocument="Fiorello/Areas/Admin/Controllers/ProductController.cs">
     <Files>
       <File FileName="Fiorello/Areas/Admin/Controllers/ProductController.cs" Line="54" Column="1" />
@@ -30,8 +27,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.Fiorello PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

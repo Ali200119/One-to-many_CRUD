@@ -118,7 +118,7 @@ namespace Fiorello.Areas.Admin.Controllers
         {
             if (id is null) return BadRequest();
 
-            Product product = await _productService.GetByIdWithIncludes(id);
+            Product product = await _productService.GetFullDataById(id);
             if (product is null) return NotFound();
 
             List<string> images = new List<string>();
@@ -142,9 +142,165 @@ namespace Fiorello.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Delete()
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View();
+            if (id is null) return BadRequest();
+
+            Product product = await _productService.GetFullDataById(id);
+            if (product is null) return NotFound();
+
+            List<string> images = new List<string>();
+
+            foreach (var image in product.ProductImages)
+            {
+                images.Add(image.Name);
+            }
+
+            ProductEditVM productEditVM = new ProductEditVM
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                Price = product.Price.ToString(),
+                Count = product.Count,
+                CategoryId = product.CategoryId,
+                ProductImages = images,
+                SoftDelete = product.SoftDelete
+            };
+
+            ViewBag.Categories = await GetCategoriesAsync();
+
+            return View(productEditVM);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(ProductEditVM model)
+        {
+            ViewBag.Categories = await GetCategoriesAsync();
+
+            Product dbProduct = await _context.Products.AsNoTracking().Include(p => p.Category).Include(p => p.ProductImages).FirstOrDefaultAsync(p => p.Id == model.Id);
+
+            List<string> images = new List<string>();
+
+            foreach (var image in dbProduct.ProductImages)
+            {
+                images.Add(image.Name);
+            }
+
+            model.ProductImages = images;
+
+
+
+            if (!ModelState.IsValid) return View(model);
+
+            foreach (var photo in model.Photos)
+            {
+                if(!photo.CheckFileType("image/"))
+                {
+                    ModelState.AddModelError("Photos", "File type must be image.");
+                    return View(model);
+                }
+            }
+
+            IEnumerable<ProductImage> dbProductImages = await _context.ProductImages.AsNoTracking().Where(pi => pi.ProductId == dbProduct.Id).ToListAsync();
+
+            foreach (var image in dbProductImages)
+            {
+                _context.ProductImages.Remove(image);
+
+                string path = FileHelper.GetFilePath(_env.WebRootPath, "img", image.Name);
+
+                FileHelper.DeleteFileFromPath(path);
+            }
+
+            List<ProductImage> productImages = new List<ProductImage>();
+
+            foreach (var photo in model.Photos)
+            {
+                string fileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
+
+                string path = FileHelper.GetFilePath(_env.WebRootPath, "img", fileName);
+
+                await photo.CreateLocalFileAsync(path);
+
+                ProductImage productImage = new ProductImage
+                {
+                    Name = fileName
+                };
+
+                productImages.Add(productImage);
+            }
+
+            decimal convertedPrice = decimal.Parse(model.Price.Replace(".", ","));
+
+            Product updatedProduct = new Product
+            {
+                Id = (int)model.Id,
+                Name = model.Name,
+                CategoryId = model.CategoryId,
+                Description = model.Description,
+                Count = model.Count,
+                Price = convertedPrice,
+                ProductImages = productImages,
+                SoftDelete = (bool)model.SoftDelete,
+            };
+
+            await _context.ProductImages.AddRangeAsync(productImages);
+            _context.Products.Update(updatedProduct);
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id is null) return BadRequest();
+
+            Product product = await _productService.GetFullDataById(id);
+            if (product is null) return NotFound();
+
+            List<string> images = new List<string>();
+
+            foreach (var image in product.ProductImages)
+            {
+                images.Add(image.Name);
+            }
+
+            ProductDeleteVM productDeleteVM = new ProductDeleteVM
+            {
+                Id = product.Id,
+                Name = product.Name,
+                CategoryName = product.Category.Name,
+                Description = product.Description,
+                Count = product.Count,
+                Price = product.Price,
+                Images = images
+            };
+
+            return View(productDeleteVM);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ActionName("Delete")]
+        public async Task<IActionResult> DeleteProduct(int? id)
+        {
+            Product product = await _productService.GetFullDataById(id);
+
+            foreach (var image in product.ProductImages)
+            {
+                string path = FileHelper.GetFilePath(_env.WebRootPath, "img", image.Name);
+
+                FileHelper.DeleteFileFromPath(path);
+            }
+
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
 
 

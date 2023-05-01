@@ -5361,12 +5361,8 @@
       "PackagePath": "staticwebassets/css/style.css.map"
     },
     {
-      "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/3b0f864a-2924-4127-981d-0971f855d1aa_Hacker.jpeg",
-      "PackagePath": "staticwebassets/img/3b0f864a-2924-4127-981d-0971f855d1aa_Hacker.jpeg"
-    },
-    {
-      "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/3b145a16-ed2f-4823-a6d5-a20baec6c33c_Rainbow Six Siege.jpeg",
-      "PackagePath": "staticwebassets/img/3b145a16-ed2f-4823-a6d5-a20baec6c33c_Rainbow Six Siege.jpeg"
+      "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/9425a0db-9be5-4424-b5e9-287c3f269b4d_Rainbow Six Siege.jpeg",
+      "PackagePath": "staticwebassets/img/9425a0db-9be5-4424-b5e9-287c3f269b4d_Rainbow Six Siege.jpeg"
     },
     {
       "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/blog-feature-img-1.jpg",
@@ -5379,6 +5375,10 @@
     {
       "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/blog-feature-img-4.jpg",
       "PackagePath": "staticwebassets/img/blog-feature-img-4.jpg"
+    },
+    {
+      "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/d7ec5546-907a-496e-bd94-38242c8fe724_Hacker.jpeg",
+      "PackagePath": "staticwebassets/img/d7ec5546-907a-496e-bd94-38242c8fe724_Hacker.jpeg"
     },
     {
       "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/favicon.png",
@@ -5471,10 +5471,6 @@
     {
       "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/shop-10-img.jpg",
       "PackagePath": "staticwebassets/img/shop-10-img.jpg"
-    },
-    {
-      "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/shop-11-img.jpg",
-      "PackagePath": "staticwebassets/img/shop-11-img.jpg"
     },
     {
       "Id": "/Users/ali200119/Desktop/One-to-many_CRUD/Fiorello/wwwroot/img/shop-12-img.jpg",
